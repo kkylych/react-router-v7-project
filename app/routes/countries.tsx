@@ -63,7 +63,7 @@ export default function Countries({ loaderData }: Route.ComponentProps) {
                 {country.name.common}
               </Link>
               <div className="text-gray-600 text-sm mt-1">
-                Region: {country.region} | Population: {country.population}
+                Region: {country.region} | Population: {country.population.toLocaleString()}
               </div>
             </li>
           ))}
